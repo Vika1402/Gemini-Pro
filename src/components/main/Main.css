@@ -12,12 +12,36 @@
   padding: 20px;
 
 }
+
+
+.main .nav p {
+  color: transparent;
+  background-image: linear-gradient(45deg, #2be312, #de350b, #120f11);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: discoLight 2s linear infinite;
+}
+
+@keyframes discoLight {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 .main .nav img{
   width: 60px;
   border-radius: 50%;
 }
 .main-container{
-  max-width: 900px;
+
   margin-left: auto;
   
 }
@@ -30,7 +54,7 @@
 
 }
 .main .greet span{
-  background: -webkit-linear-gradient(16deg,rgb(116, 116, 204),rgb(189, 82, 82));
+  background: -webkit-linear-gradient(16deg,rgb(231, 107, 218),rgb(189, 82, 82));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -118,8 +142,8 @@ font-weight: 300;
   overflow: scroll;
 
 }
-.result ::-webkit-scrollbar{
- display: none;
+.result::-webkit-scrollbar-button {
+  display: none;
 }
 .result-Title{
   margin: 40px 0px;
@@ -137,4 +161,53 @@ font-weight: 300;
   align-items: start;
   gap: 22px;
 
+}
+.loader{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Main.css */
+.loader hr {
+  border-radius: 4px;
+  border: none;
+  background: linear-gradient(to right, #ff4e50, #ff9900, #ff4e50); /* Vibrant gradient */
+  background-size: 200% 100%; /* Double the width for a smoother flow */
+  height: 5px;
+  animation: loader 2s infinite alternate-reverse; /* Pulsating effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@keyframes loader {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+
+.result-data p{
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.8;
+
+}
+@media (max-width:600px){
+  .main-bottom input{
+    flex: none;
+    width: 150px;
+  }
+  .main-bottom img{
+    width: 20px;
+  
+  }
+  .search-box{
+    padding: 5px 10px;
+  }
+.search-box div{
+  gap: 5px;
+}
 }
