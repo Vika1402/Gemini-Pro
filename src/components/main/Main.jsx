@@ -31,7 +31,7 @@ const Main = () => {
           <>
             <div className="greet">
               <p>
-                <span>Hello, vikas</span>
+                <span>Hello, User</span>
               </p>
               <p>How Can I Help You Today ? </p>
             </div>
@@ -41,7 +41,7 @@ const Main = () => {
                 <img src={assets.compass_icon} alt="" />
               </div>
               <div className="card">
-                <p>The market for virtual reality headsets in 2024: Meta dominates, Apple Vision Pro enters the market </p>
+                <p>The market for virtual reality headsets in 2024:, Apple Vision Pro enters the market </p>
                 <img src={assets.bulb_icon} alt="" />
               </div>
               <div className="card">
