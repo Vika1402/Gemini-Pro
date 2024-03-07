@@ -1,0 +1,114 @@
+.main{
+  flex: 1;
+  min-height: 100vh;
+  padding-bottom: 15vh;
+  position: relative;
+}
+.main .nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+  padding: 20px;
+
+}
+.main .nav img{
+  width: 60px;
+  border-radius: 50%;
+}
+.main-container{
+  max-width: 900px;
+  margin-left: auto;
+  
+}
+.main .greet{
+  margin: 50px 0px ;
+  font-size: 50px;
+  font-weight: 500;
+  padding: 20px;
+  color: rgb(221, 200, 176);
+
+}
+.main .greet span{
+  background: -webkit-linear-gradient(16deg,rgb(116, 116, 204),rgb(189, 82, 82));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.main .cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.main  .card{
+height: 200px;
+padding: 15px;
+background-color:#f6f6ce;
+border-radius: 10px;
+position: relative;
+cursor: pointer;
+
+}
+
+.main .card img{
+  width: 40px;
+  padding: 5px;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  bottom: 10px;
+  right: 10px;
+}
+.main .card p{
+  color: rgb(98, 91, 91);
+  font-size: 20px;
+}
+.main .card:hover{
+  color: white;
+  background-color: rgb(205, 162, 162);
+}
+.main-bottom{
+position: absolute;
+bottom: 0;
+width: 100%;
+max-width: 900px;
+padding: 0px 20px;
+margin: auto;
+
+}
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: antiquewhite;
+  padding: 10px 20px;
+  border-radius: 50px;
+
+}
+.search-box img{
+  width: 24px;
+  cursor: pointer;
+}
+.search-box input{
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 8px;
+  font-size: 18px;
+
+
+}
+.search-box div{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.main .Bottom-info{
+font-size: 13px;
+margin: 15px auto;
+text-align: center;
+font-weight: 300;
+}

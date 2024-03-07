@@ -4,7 +4,7 @@
   display: inline-flex;
   flex-direction: column;
   justify-content:space-between;
-  background-color: rgb(228, 242, 254);
+  background-color: #F0FFF0;
 }
 .sidebar img{
   width: 25px;
@@ -21,7 +21,7 @@ cursor: pointer;
   align-items: center;
   gap: 15px;
   padding: 10px 15px;
-  background-color: rgb(120, 173, 185);
+  background-color: rgb(160, 205, 215);
   border-radius: 50px;
   font-size: 15px;
   color: rgb(33, 27, 27);
